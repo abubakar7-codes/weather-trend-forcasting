@@ -8,32 +8,41 @@ Test new **Global Weather Repository** CSV datasets through the same pipeline as
 
 ```
 Weather Trend Forecasting/
+├── requirements.txt                  # Full Python deps (API + notebook)
 ├── weather-trend-forecasting.ipynb   # Original analysis notebook
 ├── backend/                          # FastAPI + pipeline
 │   ├── main.py
 │   ├── pipeline.py
-│   └── requirements.txt
+│   └── requirements.txt              # Backend-only subset
 └── frontend/                         # React + Vite UI
     └── src/
 ```
 
 ## Quick start
 
-### 1. Backend (Python)
+### 1. Python environment
+
+From the project root:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate          # Windows
+# source .venv/bin/activate   # macOS / Linux
+pip install -r requirements.txt
+```
+
+For **backend only** (no notebook / Jupyter): `pip install -r backend/requirements.txt`
+
+### 2. Backend (FastAPI)
 
 ```bash
 cd backend
-python -m venv .venv
-.venv\Scripts\activate          # Windows
-pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
 API docs: http://127.0.0.1:8000/docs
 
-### 2. Frontend
-
-In a second terminal:
+### 3. Frontend
 
 ```bash
 cd frontend
@@ -42,6 +51,12 @@ npm run dev
 ```
 
 Open http://localhost:5173
+
+### 4. Notebook (optional)
+
+```bash
+jupyter notebook weather-trend-forecasting.ipynb
+```
 
 ## Usage
 

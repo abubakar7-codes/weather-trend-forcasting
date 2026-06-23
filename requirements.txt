@@ -1,0 +1,36 @@
+# Weather Trend Forecasting — Python dependencies
+# Install from project root:
+#   python -m venv .venv
+#   .venv\Scripts\activate        # Windows
+#   source .venv/bin/activate     # macOS / Linux
+#   pip install -r requirements.txt
+#
+# Backend-only (lighter): pip install -r backend/requirements.txt
+
+# ── Web API (backend/) ──────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+python-multipart
+
+# ── Core pipeline (backend + notebook) ──────────────────────────────
+pandas
+numpy
+scipy
+scikit-learn
+statsmodels
+xgboost
+prophet
+
+# ── Schema adaptation (backend/schema.py — fuzzy column matching) ───
+rapidfuzz
+
+# ── Notebook: EDA & visualization ─────────────────────────────────
+matplotlib
+seaborn
+plotly
+folium
+shap
+
+# ── Jupyter (run weather-trend-forecasting.ipynb) ───────────────────
+jupyter
+ipykernel
