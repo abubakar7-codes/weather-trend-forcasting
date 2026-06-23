@@ -1,0 +1,31 @@
+# Python
+backend/.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment & secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Large dataset (upload via UI or download from Kaggle)
+GlobalWeatherRepository.csv
+
+# Build artifacts
+*.log
+*.tsbuildinfo

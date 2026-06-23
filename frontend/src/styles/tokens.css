@@ -1,0 +1,43 @@
+:root {
+  /* Surfaces */
+  --bg-deep: #0b1320;
+  --bg-panel: #121b2c;
+  --bg-panel-raised: #182438;
+  --border-hairline: #25334a;
+
+  /* Accents */
+  --accent-amber: #e2a53d;
+  --accent-amber-soft: rgba(226, 165, 61, 0.14);
+  --accent-amber-glow: rgba(226, 165, 61, 0.35);
+  --accent-teal: #4fd1c5;
+  --accent-teal-soft: rgba(79, 209, 197, 0.12);
+  --accent-coral: #ff6b5b;
+  --accent-coral-soft: rgba(255, 107, 91, 0.12);
+  --accent-coral-border: rgba(255, 107, 91, 0.4);
+
+  /* Text */
+  --text-primary: #eef1f5;
+  --text-muted: #8a9bb3;
+
+  /* Typography */
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Consolas", monospace;
+
+  /* Layout */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --max-upload-bytes: 52428800; /* 50 MB */
+
+  /* Legacy aliases (used by Results.tsx inline styles) */
+  --surface: var(--bg-panel);
+  --surface-2: var(--bg-panel-raised);
+  --border: var(--border-hairline);
+  --text: var(--text-primary);
+  --muted: var(--text-muted);
+  --accent: var(--accent-amber);
+  --accent-soft: var(--accent-amber-soft);
+  --success: var(--accent-teal);
+  --warning: var(--accent-amber);
+  --danger: var(--accent-coral);
+}
